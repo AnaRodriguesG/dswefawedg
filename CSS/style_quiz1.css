@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  :root {
+    --cor-font: #333;
+  }
+  
+  .cabecalho1 {
+    margin-left: 290px;
+    color: #fff;
+    position: absolute;
+    margin-top: 45px;
+    font-size: 33px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cabecalho2 {
+    margin-left: 290px;
+    color: #fff;
+    position: absolute;
+    margin-top: 85px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+  
+  }
+  
+  header {
+    height: 150px;
+    width: 100%;
+    box-shadow: 13px 10px 20px 4px rgba(0, 0, 0, 0.3);
+    background: var(--cor-font);
+  }
+  
+  .logo {
+    position: relative;
+    left: 40px;
+    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 180px;
+    height: 150px;
+  }
+  
+  .menu-icon {
+    width: 33px;
+    height: 28px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    filter: brightness(0) invert(1);
+    margin-left: 220px;
+    transition: #fff 0.3s, color 0.3s;
+    margin-top: -105px;
+  }
+  
+  .account-icon {
+    width: 43px;
+    height: 38px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    filter: brightness(0) invert(1);
+    margin-left: 1050px;
+    transition: #fff 0.3s, color 0.3s;
+    margin-top: -94px;
+    
+  }
+  .logout-icon {
+    width: 43px;
+    height: 38px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    filter: brightness(0) invert(1);
+    transition: #fff 0.3s, color 0.3s;
+    margin-top: -175px;
+    margin-left: 5px;
+
+  }
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.entrar, .cadastrar, .contas {
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.entrar:hover, .cadastrar:hover, .contas:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.questao {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 15%; 
+    align-items: center;
+}
+
+#resultados {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos gerais para os modais */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 1; /* Coloca sobre outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo preto com opacidade */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centraliza vertical e horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Largura do modal */
+    max-width: 600px; /* Limita a largura máxima */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo das cabeçalhos */
+h3 {
+    color: #2c3e50; /* Cor do título principal */
+}
+
+h4, h5 {
+    color: #34495e; /* Cor dos subtítulos */
+}
+label{
+    border-radius: 50px;
+    height: 28px;
+    font-size: 20px;
+    display:flex;
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 15%; 
+    padding: 10px;
+    background-color:#B3D8CE;
+}
+
+input[type="radio"] {
+    margin: 5px 10px 10px 5px;
+    width: 15px;
+    height: 15px;
+}
+
+    footer {
+        position: fixed; /* Faz o rodapé ficar fixo na parte inferior */
+        left: 0; /* Alinha à esquerda */
+        bottom: 0; /* Alinha na parte inferior */
+        width: 100%; /* Faz o rodapé ocupar 100% da largura da página */
+        background-color :#333; /* Cor de fundo do rodapé */
+        text-align: center; /* Centraliza o texto */
+        height: 65px;
+        color: #fff;
+        padding: 10px 0; /* Espaçamento superior e inferior */
+    }
+    
+  #btnProximo{
+    background-color:#B3D8CE;
+    color:#f0f0f0 ;
+    margin-left: 90%; 
+    width: 40px;
+    height: 40px;
+    border: #B3D8CE;
+    border-radius: 50px;
+  }
